@@ -1,0 +1,9 @@
+* {
+  font-family: Trickster;
+}
+body {
+  background: var(--background);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}

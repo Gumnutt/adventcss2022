@@ -1,0 +1,52 @@
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  padding: 40px;
+  background: #f7f7f7;
+  gap: 12px;
+  .row {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    gap: 12px;
+  }
+  .key {
+    display: grid;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    min-width: 65px;
+    height: 65px;
+    padding: 18px 20px;
+    background: #ffffff;
+    font-family: "Inter";
+    font-weight: 700;
+    color: #60c1b6;
+    place-items: center;
+    &--text {
+      width: 100%;
+      color: #868888;
+    }
+    &--jiggle {
+      animation: tilt-shaking 0.3s infinite;
+    }
+  }
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

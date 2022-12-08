@@ -1,0 +1,45 @@
+@property --degrees {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.pomodoro {
+  --timer-color: var(--red);
+  --degrees: 0deg;
+  aspect-ratio: 1/1;
+  width: 32.375rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-image: conic-gradient(var(--timer-color) var(--degrees), black var(--degrees));
+  appearance: none;
+  border: none;
+}
+.pomodoro--timer {
+  width: 31.25rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: radial-gradient(71.4% 71.4% at 51.7% 28.6%, var(--lightgrey) 0%, var(--darkgrey) 100%);
+  p {
+    font-size: 1rem;
+    font-weight: 700;
+    background: linear-gradient(var(--white) 0%, var(--verylightgrey) 100%);
+    background-clip: text;
+    text-fill-color: transparent;
+    color: transparent;
+    letter-spacing: 0.6em;
+  }
+}
+
+.timer--time {
+  font-size: 12.25rem;
+  background: linear-gradient(var(--white) 0%, var(--verylightgrey) 100%);
+  background-clip: text;
+  text-fill-color: transparent;
+  color: transparent;
+}

@@ -1,0 +1,42 @@
+:root {
+  --day2-background: #eff0f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.day2 {
+  background-color: var(--day2-background);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Poppins";
+  position: relative;
+  .bg {
+    position: absolute;
+    &-top-right {
+      top: 0;
+      right: 0;
+    }
+    &-btm-right {
+      bottom: 0;
+      right: 0;
+    }
+    &-left {
+      left: 0;
+    }
+  }
+}
+
+.day4 {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+}

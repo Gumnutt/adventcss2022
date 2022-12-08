@@ -1,0 +1,10 @@
+.page--wrapper {
+  background: #ffffff;
+  box-shadow: 0px 0px 70px #c7cbe3;
+  border-radius: 25px;
+  max-width: 375px;
+  width: 100%;
+  padding-left: 2.375rem;
+  max-height: 50rem;
+  overflow: scroll;
+}
