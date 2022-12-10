@@ -78,6 +78,7 @@ export default {
         ],
       ],
       randomKey: {},
+      keyPressed: "",
     }
   },
   mounted() {
@@ -86,12 +87,19 @@ export default {
   computed: {
     keydown() {
       window.addEventListener("keydown", (e) => {
-        console.log(e.key)
-        if (e.key.toLowerCase() == this.randomKey.value.toLowerCase()) {
-          document.getElementById(this.randomKey.key).classList.remove("key--jiggle")
-          this.getRandomKey()
-        }
+        this.keyPressed = e.key
+        // if (e.key.toLowerCase() == this.randomKey.value.toLowerCase()) {
+        //   document.getElementById(this.randomKey.key).classList.remove("key--jiggle")
+        //   this.getRandomKey()
+        // }
       })
+    },
+    checkKey() {
+      if (this.keyPressed.toLowerCase() == this.randomKey.value.toLowerCase()) {
+        document.getElementById(this.randomKey.key).classList.remove("key--jiggle")
+        this.getRandomKey()
+        return true
+      }
     },
   },
   methods: {

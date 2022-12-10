@@ -40,3 +40,24 @@ body {
   min-height: 100vh;
   background-color: #ffffff;
 }
+
+.day5 {
+  background-color: #f3f3f3;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.day6 {
+  background-color: #262529;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.day7 {
+  background-color: #f6f6f3;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}

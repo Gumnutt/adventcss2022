@@ -15,6 +15,9 @@ export default defineConfig({
         families: [
           { name: "Poppins", styles: "wght@400;700" },
           { name: "Inter", styles: "wght@400;700" },
+          { name: "Nunito Sans", styles: "wght@400;700" },
+          { name: "Source Sans Pro", styles: "wght@400;700" },
+          { name: "Roboto Mono", styles: "wght@400;700" },
         ],
       },
     }),
